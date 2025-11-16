@@ -40,18 +40,19 @@ function Hero() {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(${bgHero})`,
       }}
     >
-      {/* Navbar */}
-      <div className="absolute top-0 left-0 w-full flex justify-between items-center p-6 z-[100]">
-        <Logo />
-        <nav>
-          <ul className="flex space-x-8">
-            <li><a href="/" className="hover:text-yellow-400">Home</a></li>
-            <li><a href="/services" className="hover:text-yellow-400">Services</a></li>
-            <li><a href="/about" className="hover:text-yellow-400">About Us</a></li>
-            <li><a href="/contact" className="hover:text-yellow-400">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+   {/* Navbar */} 
+     <div className="absolute top-0 left-0 w-full flex justify-between items-center p-6 z-[100]"> 
+      <Logo /> 
+     <nav> 
+       <ul className="flex space-x-8"> 
+          <li><a href="/" className="hover:text-yellow-400">Home</a></li> 
+          <li><a href="/services" className="hover:text-yellow-400">Services</a></li> 
+          <li><a href="/about" className="hover:text-yellow-400">About Us</a></li> 
+          <li><a href="/contact" className="hover:text-yellow-400">Contact</a></li> 
+       </ul> 
+      </nav> 
+     </div>
+
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4">

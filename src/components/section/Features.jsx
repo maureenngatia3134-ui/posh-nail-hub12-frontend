@@ -1,4 +1,4 @@
-// Features.jsx
+
 import { ArrowRight } from "lucide-react";
 import { ProductCard } from "../common/card";
 import Image1 from '../../assets/korie-cull-ggtdbP92hf8-unsplash.jpg';
@@ -35,7 +35,7 @@ function Features({ services = defaultServices }) {
 
           {/* Right side - Service cards */}
           <div className="flex-1">
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-50">
               {services.map((service, index) => (
                 <ProductCard
                   key={service.title + index}

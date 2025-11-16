@@ -1,7 +1,7 @@
 // card.jsx
 export function ProductCard({ image, title }) {
   return (
-    <div className="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+    <div className="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300 w-50 gap-10">
       <img
         src={image}
         alt={title}
