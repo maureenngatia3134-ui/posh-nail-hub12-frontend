@@ -44,10 +44,7 @@
     <div className="absolute top-0 left-0 w-full flex justify-between items-center p-6 z-[100]"> 
        <Logo /> 
       <nav>
-        <div className="md:hidden container mx-auto px-4 mt-2">
-          <div id="primary-navigation" ref={menuRef} role="navigation"> className="bg-white bg-opacity-95 texrt-black rounded-lg shadow-lg py-4 px-6"
-        </div>
-        </div>
+        
         <ul className="flex space-x-8"> 
            <li><a href="/" className="hover:text-yellow-400">Home</a></li> 
            <li><a href="/services" className="hover:text-yellow-400">Services</a></li> 
