@@ -4,6 +4,7 @@ import Logo from '../common/Logo';
 
 function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     service: '',
@@ -40,19 +41,44 @@ function Hero() {
         backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(${bgHero})`,
       }}
     >
-   {/* Navbar */} 
-     <div className="absolute top-0 left-0 w-full flex justify-between items-center p-6 z-[100]"> 
-      <Logo /> 
-     <nav> 
-       <ul className="flex space-x-8"> 
-          <li><a href="/" className="hover:text-yellow-400">Home</a></li> 
-          <li><a href="/services" className="hover:text-yellow-400">Services</a></li> 
-          <li><a href="/about" className="hover:text-yellow-400">About Us</a></li> 
-          <li><a href="/contact" className="hover:text-yellow-400">Contact</a></li> 
-       </ul> 
-      </nav> 
-     </div>
+      {/* Navbar */}
+      <div className="absolute top-0 left-0 w-full flex justify-between items-center p-6 z-[100]">
+        <Logo />
 
+        {/* Desktop Menu */}
+        <nav className="hidden md:block">
+          <ul className="flex space-x-8">
+            <li><a href="/" className="hover:text-yellow-400">Home</a></li>
+            <li><a href="/services" className="hover:text-yellow-400">Services</a></li>
+            <li><a href="/about" className="hover:text-yellow-400">About Us</a></li>
+            <li><a href="/contact" className="hover:text-yellow-400">Contact</a></li>
+          </ul>
+        </nav>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden text-white text-3xl"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? "✕" : "☰"}
+        </button>
+      </div>
+
+      {/* Mobile Slide-Down Menu */}
+      <div
+        className={`
+          absolute top-20 left-0 w-full bg-black bg-opacity-80 text-center z-[99] md:hidden
+          overflow-hidden transition-all duration-500 ease-in-out
+          ${isMenuOpen ? "max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-5"}
+        `}
+      >
+        <div className="flex flex-col space-y-4 p-6">
+          <a href="/" className="text-white text-lg hover:text-yellow-400">Home</a>
+          <a href="/services" className="text-white text-lg hover:text-yellow-400">Services</a>
+          <a href="/about" className="text-white text-lg hover:text-yellow-400">About Us</a>
+          <a href="/contact" className="text-white text-lg hover:text-yellow-400">Contact</a>
+        </div>
+      </div>
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-4">
