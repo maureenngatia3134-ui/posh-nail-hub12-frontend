@@ -10,7 +10,7 @@ export default function Testimonials() {
       role: "Beauty Blogger",
       avatar: "https://randomuser.me/api/portraits/women/45.jpg",
       feedback:
-        "Posh Nail Hub is my go-to place for self-care. Their nail artists are true professionals — every visit feels like a luxury retreat.",
+        "Posh Nail Hub is my go-to place for self care. Their nail artists are true professionals every visit feels like a luxury retreat.",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function Testimonials() {
       role: "Model",
       avatar: "https://randomuser.me/api/portraits/women/68.jpg",
       feedback:
-        "I’ve never had such a flawless manicure! The team at Posh Nail Hub pays attention to every tiny detail — I always leave feeling confident and beautiful.",
+        "I’ve never had such a flawless manicure. The team at Posh Nail Hub pays attention to every tiny detail  I always leave feeling confident and beautiful.",
     },
     {
       id: 3,
