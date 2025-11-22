@@ -26,7 +26,7 @@ export default function Testimonials() {
       role: "Event Planner",
       avatar: "https://randomuser.me/api/portraits/women/29.jpg",
       feedback:
-        "From the ambiance to the artistry, Posh Nail Hub delivers perfection every time. Their nail designs are pure sophistication!",
+        "From the ambiance to the artistry, Posh Nail Hub delivers perfection every time. Their nail designs are pure sophistication",
     },
   ];
 
